@@ -1,0 +1,14 @@
+// testbench.v
+
+module testbench;
+  reg clk = 0;
+  pipelined_processor cpu(clk);
+
+  always #5 clk = ~clk;  // 10-time-unit clock period
+
+  initial begin
+    $dumpfile("waveform.vcd");
+    $dumpvars(0, testbench);
+    #100 $finish;  // Stop simulation after 100 time units
+  end
+endmodule
