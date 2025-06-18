@@ -1,0 +1,210 @@
+$date
+	Tue Jun 03 11:10:48 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module testbench $end
+$var reg 1 ! clk $end
+$scope module cpu $end
+$var wire 1 ! clk $end
+$var wire 16 " rdata2 [15:0] $end
+$var wire 16 # rdata1 [15:0] $end
+$var wire 16 $ mem_data [15:0] $end
+$var wire 16 % instruction [15:0] $end
+$var wire 16 & alu_result [15:0] $end
+$var reg 4 ' EX_MEM_rdest [3:0] $end
+$var reg 16 ( EX_MEM_result [15:0] $end
+$var reg 1 ) EX_MEM_we $end
+$var reg 8 * ID_EX_addr [7:0] $end
+$var reg 1 + ID_EX_is_load $end
+$var reg 2 , ID_EX_op [1:0] $end
+$var reg 16 - ID_EX_rdata1 [15:0] $end
+$var reg 16 . ID_EX_rdata2 [15:0] $end
+$var reg 4 / ID_EX_rdest [3:0] $end
+$var reg 16 0 IF_ID_instr [15:0] $end
+$var reg 4 1 pc [3:0] $end
+$scope module dm $end
+$var wire 8 2 addr [7:0] $end
+$var wire 16 3 data [15:0] $end
+$upscope $end
+$scope module im $end
+$var wire 16 4 instruction [15:0] $end
+$var wire 4 5 pc [3:0] $end
+$upscope $end
+$scope module myalu $end
+$var wire 16 6 a [15:0] $end
+$var wire 16 7 b [15:0] $end
+$var wire 2 8 op [1:0] $end
+$var reg 16 9 result [15:0] $end
+$upscope $end
+$scope module rf $end
+$var wire 1 ! clk $end
+$var wire 4 : raddr1 [3:0] $end
+$var wire 4 ; raddr2 [3:0] $end
+$var wire 16 < rdata1 [15:0] $end
+$var wire 16 = rdata2 [15:0] $end
+$var wire 4 > waddr [3:0] $end
+$var wire 16 ? wdata [15:0] $end
+$var wire 1 ) we $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx ?
+bx >
+bx =
+bx <
+bx ;
+bx :
+bx 9
+bx 8
+bx 7
+bx 6
+b0 5
+b1000100100011 4
+bx 3
+bx 2
+b0 1
+bx 0
+bx /
+bx .
+bx -
+bx ,
+x+
+bx *
+x)
+bx (
+bx '
+bx &
+b1000100100011 %
+bx $
+bx #
+bx "
+0!
+$end
+#5
+b1 :
+b10 ;
+1)
+b0xxxx *
+b0xxxx 2
+b10001000110100 %
+b10001000110100 4
+b1 1
+b1 5
+b1000100100011 0
+1!
+#10
+0!
+#15
+b10 :
+b11 ;
+0+
+b0 ,
+b0 8
+b11 *
+b11 2
+b1 /
+b11001100001000 %
+b11001100001000 4
+b10 1
+b10 5
+b10001000110100 0
+1!
+#20
+0!
+#25
+b11 :
+b0 ;
+b1 '
+b1 >
+b1 ,
+b1 8
+b100 *
+b100 2
+b10 /
+bx %
+bx 4
+b11 1
+b11 5
+b11001100001000 0
+1!
+#30
+0!
+#35
+bx :
+bx ;
+b10 '
+b10 >
+1+
+b0 ,
+b0 8
+b11111111 $
+b11111111 3
+b1000 *
+b1000 2
+b11 /
+b100 1
+b100 5
+bx 0
+1!
+#40
+0!
+#45
+b11 '
+b11 >
+b11111111 (
+b11111111 ?
+bx $
+bx 3
+b0xxxx *
+b0xxxx 2
+bx /
+b101 1
+b101 5
+1!
+#50
+0!
+#55
+bx '
+bx >
+bx (
+bx ?
+b110 1
+b110 5
+1!
+#60
+0!
+#65
+b111 1
+b111 5
+1!
+#70
+0!
+#75
+b1000 1
+b1000 5
+1!
+#80
+0!
+#85
+b1001 1
+b1001 5
+1!
+#90
+0!
+#95
+b1010 1
+b1010 5
+1!
+#100
+0!
